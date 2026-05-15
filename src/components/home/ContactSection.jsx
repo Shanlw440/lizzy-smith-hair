@@ -1,8 +1,15 @@
 import { MapPin, Camera, Calendar, Phone } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ContactSection() {
   return (
-    <section className="px-6 py-16 bg-[#EFE9DF]">
+    <motion.section
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="px-6 py-16 bg-[#EFE9DF]"
+    >
       <div className="max-w-md mx-auto text-center">
         <div className="mb-10">
           <MapPin className="w-5 h-5 mx-auto text-[#5D7A63] mb-4" />
@@ -17,11 +24,17 @@ export default function ContactSection() {
           <div className="w-14 h-px bg-[#5D7A63]/30 mx-auto mt-4" />
         </div>
 
-        <div className="bg-white rounded-3xl p-6 shadow-sm border border-[#DDD6CC]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="bg-white rounded-3xl p-6 shadow-sm border border-[#DDD6CC]"
+        >
           <p className="text-sm text-[#7A7268] mb-2">Salon address</p>
 
           <p className="text-[#3E342C] font-medium leading-relaxed">
-            4 Address Address,
+            4 Address
             <br />
             Address Road,
             <br />
@@ -72,8 +85,8 @@ export default function ContactSection() {
               Book Appointment
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

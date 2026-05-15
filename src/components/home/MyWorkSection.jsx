@@ -1,15 +1,22 @@
 import { Camera } from "lucide-react";
+import { motion } from "framer-motion";
 
 const workImages = [
-  "/images/work1.jpeg",
-  "/images/work2.jpeg",
-  "/images/work3.jpeg",
-  "/images/work4.jpeg",
+  "/images/work1.png",
+  "/images/work2.png",
+  "/images/work3.png",
+  "/images/work4.png",
 ];
 
 export default function MyWorkSection() {
   return (
-    <section className="px-6 py-16 bg-[#F6F3EE]">
+    <motion.section
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="px-6 py-16 bg-[#F6F3EE]"
+    >
       <div className="max-w-md mx-auto">
         <div className="text-center mb-10">
           <h2
@@ -28,8 +35,12 @@ export default function MyWorkSection() {
 
         <div className="grid grid-cols-2 gap-4">
           {workImages.map((image, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, scale: 0.94 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: index * 0.08 }}
               className="aspect-[3/4] rounded-2xl overflow-hidden shadow-sm bg-[#EFE9DF]"
             >
               <img
@@ -37,7 +48,7 @@ export default function MyWorkSection() {
                 alt={`Lizzy Smith hair work ${index + 1}`}
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
 
@@ -53,6 +64,6 @@ export default function MyWorkSection() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
