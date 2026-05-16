@@ -1,7 +1,6 @@
 import { Calendar } from "lucide-react";
 
-const BOOK_URL =
-  "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
+cconst BOOK_URL = "https://www.instagram.com/direct/t/lizzysmithhair";
 
 export default function BookNowBar() {
   return (
