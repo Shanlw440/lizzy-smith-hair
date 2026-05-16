@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Camera, Calendar } from "lucide-react";
 
+const BOOK_URL =
+  "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
+
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
 
@@ -83,7 +86,9 @@ export default function MobileNav() {
           </a>
 
           <a
-            href="#book"
+            href={BOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-4 bg-[#5D7A63] text-white py-4 rounded-2xl font-medium flex items-center justify-center gap-2"
           >

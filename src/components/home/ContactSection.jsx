@@ -1,6 +1,9 @@
 import { MapPin, Camera, Calendar, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
+const BOOK_URL =
+  "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
+
 export default function ContactSection() {
   return (
     <motion.section
@@ -34,13 +37,13 @@ export default function ContactSection() {
           <p className="text-sm text-[#7A7268] mb-2">Salon address</p>
 
           <p className="text-[#3E342C] font-medium leading-relaxed">
-            4 Address
+            4 Grange Farm,
             <br />
-            Address Road,
+            Cocklehole Road,
             <br />
             Terrington St Clements,
             <br />
-            PE34 XXX
+            PE34 4HH
           </p>
 
           <p className="text-sm text-[#7A7268] leading-relaxed mt-5">
@@ -78,7 +81,9 @@ export default function ContactSection() {
             </a>
 
             <a
-              href="#book"
+              href={BOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full bg-[#3E342C] text-white py-4 rounded-2xl font-medium flex items-center justify-center gap-2"
             >
               <Calendar className="w-5 h-5" />
