@@ -13,7 +13,6 @@ export default function SiteLayout() {
       </main>
 
       <Footer />
-      <BookNowBar />
     </div>
   );
 }
