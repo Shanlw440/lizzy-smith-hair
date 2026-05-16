@@ -20,7 +20,7 @@ export default function HeroSection() {
         <div className="max-w-md mx-auto text-center text-white">
           
 
-          <div className="-translate-y-16">
+          <div className="-translate-y-32">
             <h1
               className="text-5xl font-light mb-3"
               style={{ fontFamily: "Cormorant Garamond" }}
