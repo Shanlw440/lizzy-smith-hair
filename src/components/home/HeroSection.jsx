@@ -8,12 +8,12 @@ export default function HeroSection() {
     <section className="relative min-h-[85vh] flex items-end overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/images/hero.jpeg"
+          src="/images/hero.jpg"
           alt="Lizzy Smith Hairdressing"
           className="w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/45" />
       </div>
 
       <div className="relative z-10 w-full px-6 pb-20">
