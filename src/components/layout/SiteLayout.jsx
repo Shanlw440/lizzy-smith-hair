@@ -11,7 +11,7 @@ export default function SiteLayout() {
       <main>
         <Outlet />
       </main>
-
+      <BookNowBar />
       <Footer />
     </div>
   );
