@@ -2,10 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Camera, Calendar } from "lucide-react";
 
-const BOOK_URL = "https://www.instagram.com/direct/t/lizzysmithhair";
-
-// const BOOKSOLO_URL = "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
-
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
 
@@ -87,7 +83,7 @@ export default function MobileNav() {
           </a>
 
           <a
-            href={BOOK_URL}
+            href="https://www.instagram.com/lizzysmithhair/"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
