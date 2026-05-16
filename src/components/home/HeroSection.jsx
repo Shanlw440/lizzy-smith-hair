@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative min-h-[85vh] flex items-end overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/images/hero.jpg"
+          src="/images/hero.jpeg"
           alt="Lizzy Smith Hairdressing"
           className="w-full h-full object-cover"
         />
