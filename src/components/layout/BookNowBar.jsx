@@ -13,7 +13,7 @@ export default function BookNowBar() {
         className="w-full bg-[#5D7A63] text-white py-4 rounded-2xl flex items-center justify-center gap-2 font-medium"
       >
         <Calendar className="w-5 h-5" />
-        Book Appointment
+        Message to Book
       </a>
     </div>
   );

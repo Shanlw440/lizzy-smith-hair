@@ -1,8 +1,10 @@
 import { MapPin, Camera, Calendar, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
-const BOOK_URL =
-  "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
+const BOOK_URL = "https://ig.me/m/lizzysmithhair";
+
+// Save for later:
+// const BOOK_URL = "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
 
 export default function ContactSection() {
   return (
@@ -87,7 +89,7 @@ export default function ContactSection() {
               className="w-full bg-[#3E342C] text-white py-4 rounded-2xl font-medium flex items-center justify-center gap-2"
             >
               <Calendar className="w-5 h-5" />
-              Book Appointment
+              Message to Book
             </a>
           </div>
         </motion.div>

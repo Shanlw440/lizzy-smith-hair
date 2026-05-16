@@ -1,7 +1,9 @@
 import { Calendar, Sparkles } from "lucide-react";
 
-const BOOK_URL =
-  "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
+const BOOK_URL = "https://ig.me/m/lizzysmithhair";
+
+// Save for later:
+// const BOOKSOLO_URL = "https://booksolo.co/draft-5491022563/book/location?directBooking=true";
 
 export default function HeroSection() {
   return (
@@ -20,7 +22,7 @@ export default function HeroSection() {
         <div className="max-w-md mx-auto text-center text-white">
           
 
-          <div className="-translate-y-80">
+          <div className="-translate-y-70">
             <h1
               className="text-5xl font-light mb-3"
               style={{ fontFamily: "Cormorant Garamond" }}
@@ -47,7 +49,7 @@ export default function HeroSection() {
             className="bg-[#5D7A63] hover:bg-[#4f6855] transition-colors px-8 py-4 rounded-2xl font-medium flex items-center justify-center gap-2 mx-auto -mt-10"
           >
             <Calendar className="w-5 h-5" />
-            Book Your Appointment
+            Message to Book
           </a>
         </div>
       </div>
