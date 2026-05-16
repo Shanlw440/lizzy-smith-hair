@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative min-h-[85vh] flex items-end overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/images/hero.jpg"
+          src="/images/hero.jpeg"
           alt="Lizzy Smith Hairdressing"
           className="w-full h-full object-cover"
         />
@@ -16,14 +16,8 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-black/45" />
       </div>
 
-      <div className="relative z-10 w-full px-6 pb-20">
+      <div className="relative z-10 w-full px-6 pb-28">
         <div className="max-w-md mx-auto text-center text-white">
-          <img
-            src="/images/logo-white.png"
-            alt="Lizzy Smith Hairdressing"
-            className="w-28 mx-auto mb-6"
-          />
-
           <h1
             className="text-5xl font-light mb-3"
             style={{ fontFamily: "Cormorant Garamond" }}
