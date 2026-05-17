@@ -70,7 +70,7 @@ export default function ContactSection() {
               className="w-full bg-[#5D7A63] text-white py-4 rounded-2xl font-medium flex items-center justify-center gap-2"
             >
               <Camera className="w-5 h-5" />
-              Message on Instagram
+              Find on Instagram
             </a>
 
             <a
